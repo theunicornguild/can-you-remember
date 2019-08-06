@@ -25,3 +25,37 @@ function Home() {
 
 export default Home;
 ```
+
+### What are props? ###
+Props are informations that are passed between components
+Those information can be data or functions 
+
+Look at the example below
+
+To pass props to a component, we will send it as an attribute as shown below:
+```jsx
+<DisplayName name="Can You Remember" />
+```
+
+To use passed props
+```jsx
+import React from “react”;
+
+function DisplayName({name}) {
+    render() {
+        return (
+            <div>
+                <h1>
+                    Welcome To, {name}!
+                <h1>
+                <p>
+                   This is a memory game
+                <p>
+            </div>
+        );
+    }
+}
+export default DisplayName;
+```
+
+Props are really important, specially to this project
