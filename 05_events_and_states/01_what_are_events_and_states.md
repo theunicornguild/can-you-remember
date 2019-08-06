@@ -13,7 +13,7 @@ You will notice that there is an `onClick` event handler where it takes a functi
 We will be using this throughout the project and we will go back to components we have created and handle button clicks to execute a specific function (just not yet)
 
 
-### What is a state?###
+### What is a state? ###
 One of the super powers of React is updating elements on the screen without refreshing the page! In React, we can build a whole app in one page without refreshing it, how amazing is that?!
 
 To do that we will be using a `useState`, which is an hook that contains a dynamic property. Every component can have multiple states.

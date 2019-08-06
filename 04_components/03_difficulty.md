@@ -52,3 +52,14 @@ export default Difficulty;
 Nothing new here just for this component to get rendered you will have to import it in your `App.js` and place it in your return 
 
 Like the `Home` component the buttons do nothing yet
+
+### Git
+
+Create a new checkpoint
+
+```shell
+$ git add .
+$ git commit -m "Done with Difficulty static component"
+$ git push
+```
+___

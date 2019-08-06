@@ -3,7 +3,7 @@
 
 In other words components lets your code look cleaner, more understandable and halps you debug and trace your code easily incase of any errors 
 
-### how do we create components ###
+### How do we create components ###
 1. Create a new file of type `Filename.js`
    ```jsx 
    import React from "react";

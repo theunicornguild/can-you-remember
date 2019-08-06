@@ -81,3 +81,14 @@ export default App;
 ```
 
 So as you can see we replaced everything with the `Home` component, now you will be able to see the Home component in your browser
+
+### Git
+
+Create a new checkpoint
+
+```shell
+$ git add .
+$ git commit -m "DOne with static home component"
+$ git push
+```
+___
