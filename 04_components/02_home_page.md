@@ -14,7 +14,7 @@ const Home = () => {
   return (
     {/*1*/}
     <div className="container">
-    // 2
+    {/*2*/}
       <div className="jumbotron m-5">
         // 3
           <h1 className="mb-5">Can you remember?</h1>
