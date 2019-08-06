@@ -12,7 +12,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    //1
+    {/*1*/}
     <div className="container">
     // 2
       <div className="jumbotron m-5">
