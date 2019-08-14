@@ -1,3 +1,103 @@
+---
+### What do we need?
+
 Now that we have our card component ready to use we want to make the cards list dependent on the difficulty of the game and we want to duplicate the cards so that there is two of each
 
-To start with
+To start with this feature we will need the following
+
+1. If the difficulty is easy, normal, or hard we want to use the first six,8 or all cards from the `data` file, duplicate it then shuffle
+2. to shuffle we need to define a function that would shuffle an array
+3. store the shuffled cards and send them as props to the `Cards` component
+---
+
+### How to randomize cards ?
+
+Create a file called `utils.js` which is a javascript file that will contain any functions we will need to use to create the following behaviour
+
+In your `utils.js` file place the following code:
+
+```javascript
+export const shuffle = list => {
+  var j, x, i;
+  for (i = list.length - 1; i > 0; i--) {
+    j = Math.floor(Math.random() * (i + 1));
+    x = list[i];
+    list[i] = list[j];
+    list[j] = x;
+  }
+  return list;
+};
+```
+
+This code will be called later on and we will pass it an array it will return the same array but shuffled.
+
+Then in our `App.js` file place the following code :
+
+```jsx
+import React, { useState, useEffect } from "react";
+
+// Data
+import allCards from "../data";
+
+// Utils
+import { shuffle } from "./utils";
+
+// Components
+import Card from "./Card";
+
+const App = () => {
+  const [cards, setCards] = useState([]);
+  const [difficulty, setDifficulty] = useState("easy"); //1
+
+  //Used to duplicate the amount of cards since we need two of each and shuffle them using the function defined at the top
+  let cardsTemp = allCards;
+  switch (difficulty) {
+    case "easy":
+      cardsTemp = allCards.slice(0, 6);
+      break;
+    case "medium":
+      cardsTemp = allCards.slice(0, 8);
+      break;
+    default:
+      break;
+  }
+
+  setCards(() => shuffle([...cardsTemp, ...cardsTemp])); //2
+
+  //Mapping through the array of cards and placing them in the card component
+  const cardList = cards.map((card, idx) => (
+    <Card key={`${card.id}-${idx}`} card={card} />
+  ));
+
+  return (
+    <div className="App border my-5">
+      <div className="container">
+        <div className="row">
+          <div className="col-9">
+            <div className="row border">{cardList}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default App;
+```
+
+The code above will allow you to see a grid of cards, in rows of fours and you can flip cards (no checking if flipped cards are equal and you can flip more than two cards a time)
+
+1. We defined a state with the initial value "easy" for now we will have to set the difficulty depending on the user choice
+2. We set the cards state to a duplicate of the cards required shuffled
+
+### Git
+
+Create a new checkpoint
+
+```shell
+$ git add .
+$ git commit -m "Done with randomizing card behaviour "
+$ git push
+```
+
+---
