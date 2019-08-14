@@ -18,7 +18,7 @@ Yarn is a `JavaScript` manager and a task runner:
 - then using the following command
 
   ```shell
-   yarn create react-app can-you-rememeber
+   yarn create react-app can-you-remember
   ```
 
   this will create a folder that will contain your project files
