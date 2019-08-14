@@ -12,7 +12,7 @@ To start with this feature we will need the following
 
 ### How to randomize cards ?
 
-Create a file called `utils.js` which is a javascript file that will contain any functions we will need to use to create the following behaviour
+Create a file called `utils.js` which is a javascript file that will contain any functions we will need to use to create the following behavior
 
 In your `utils.js` file place the following code:
 
@@ -96,7 +96,7 @@ Create a new checkpoint
 
 ```shell
 $ git add .
-$ git commit -m "Done with randomizing card behaviour "
+$ git commit -m "Done with randomizing card behavior "
 $ git push
 ```
 

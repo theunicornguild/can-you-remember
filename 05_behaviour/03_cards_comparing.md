@@ -61,7 +61,7 @@ const Game = ({ mode, difficulty }) => {
     }
   }; //3
 
-  //Mapping through the array of cards and placing them in the card componenet
+  //Mapping through the array of cards and placing them in the card component
   const cardList = cards.map((card, idx) => (
     <Card key={`${card.id}-${idx}`} card={card} checkFlipped={checkFlipped} /> //4
   ));
@@ -80,9 +80,9 @@ const Game = ({ mode, difficulty }) => {
 export default Game;
 ```
 
-1. We defined an array that will contain the flipped cards and a function that will change the value of this array, the reason we didn't create this as a state (useState) because this change frequently and when states are changed they rerender any child components which we don't want
+1. We defined an array that will contain the flipped cards and a function that will change the value of this array, the reason we didn't create this as a state (useState) because this change frequently and when states are changed they re-render any child components which we don't want
 2. We defined a function called `unflipCards` that takes two functions and it will call those two functions sending them the value false (these two functions will be coming from the cards that are flipped to unflip them), the reason we have a timeout is to give the player a chance to see the flipped cards so he can match them later with other cards incase the flip went wrong
-3. This function `checkFlipped` takes a flippedObject, will change the value of the flipped cards array to store the flippedObject in it and then checks, if there are two cards flipped and they are not equal it will call the `unflipCards` function and pass it the unflip functions of every card ao that they get unflipped, then it empties the array of flipped cards, if they're equal it'll just empty the array in `1`
+3. This function `checkFlipped` takes a flippedObject, will change the value of the flipped cards array to store the flippedObject in it and then checks, if there are two cards flipped and they are not equal it will call the `unflipCards` function and pass it the unflip functions of every card ao that they get un-flipped, then it empties the array of flipped cards, if they're equal it'll just empty the array in `1`
 
 Then change `Card.js` to the following :
 

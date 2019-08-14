@@ -106,7 +106,7 @@ export default Game;
 You will notice a new import `useEffect`
 use Effect is used to do certain actions when the components is being rendered, when the components gets rendered and when a specific specified variable changes
 
-In our case when the components is being rendered the cards get set and shuffled then whenever the difficulty is changed the component gets rerendered
+In our case when the components is being rendered the cards get set and shuffled then whenever the difficulty is changed the component gets re-rendered
 
 With this new component made, your `App.js. will look like that:
 

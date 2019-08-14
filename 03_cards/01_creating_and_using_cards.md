@@ -10,7 +10,7 @@ Then create a javascript file called `data.js` which will contain the list of ca
 In your `data.js` file you will define an array and export it to use it in your code later
 Use the `code` below in your `data.js` file
 
-``` javascript
+```javascript
 //Cards Images import from the folder `images`
 import AppleCard from "./images/AppleCard.jpg";
 import CareemCard from "./images/CareemCard.jpg";
@@ -23,10 +23,9 @@ import PaypalCard from "./images/PaypalCard.jpg";
 import TwitterCard from "./images/TwitterCard.jpg";
 import UberCard from "./images/UberCard.jpg";
 
-
 //Defining a constant named cards
 const cards = [
-    //Creating objects of cards that has the key `id` with a unique value and a `front` key with the picture of one of the cards as a value
+  //Creating objects of cards that has the key `id` with a unique value and a `front` key with the picture of one of the cards as a value
   {
     id: 1,
     front: AppleCard
@@ -69,12 +68,11 @@ const cards = [
   }
 ];
 
-
 // Here we are exporting the array of cards so that we can import it in any component as needed
 export default cards;
 ```
 
-Now that you have defined the `data` you will be using in your project you are ready to start coding your componenets 
+Now that you have defined the `data` you will be using in your project you are ready to start coding your components
 
 ### Git
 
@@ -85,4 +83,5 @@ $ git add .
 $ git commit -m "added images and data file to the project"
 $ git push
 ```
-___
+
+---
