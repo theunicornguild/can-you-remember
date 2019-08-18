@@ -135,3 +135,11 @@ If you noticed that now the card component is receiving two props, the `card` ob
 
 1. We defined a function called `handleFlip` that checks if the card is not already flipped it will flip it by calling `changeFlip` and then calls `checkFlipped` passing it an object with the id of the card and the changeFlip function of the card
 2. Then whenever the card is clicked the `handleFlip` function is called
+
+### Git
+
+```shell
+$ git add .
+$ git commit -m "Cards are being compared"
+$ git push
+```

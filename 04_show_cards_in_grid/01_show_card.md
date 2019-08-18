@@ -1,8 +1,6 @@
----
-
 ### Trello
 
-Move the first card in the `Backlog` list which is "As a player I will see a grid of cards (face down)" to the `Doing` list
+- Move the first card in the `Backlog` list which is "As a player I will see a grid of cards (face down)" to the `Doing` list
 
 ---
 
@@ -53,3 +51,11 @@ export default App;
 1. We placed the class `row` from bootstrap to make sure the cards inside the div are placed on the same line
 2. We gave the card div the class `col-3` and `my-1` so that we can only have `4` cards per row and with some space between every row
 3. Then we gave our image the class `mx-auto` from bootstrap to center the image in the div
+
+###Git
+
+```shell
+$ git add .
+$ git commit -m "Game layout"
+$ git push
+```

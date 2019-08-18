@@ -69,3 +69,11 @@ const Score = ({ mode, score, failedFlips, playerTurn }) => {
 
 export default Score;
 ```
+
+### Git
+
+```shell
+$ git add .
+$ git commit -m "Score Component Refactored"
+$ git push
+```

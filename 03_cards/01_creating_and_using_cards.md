@@ -1,9 +1,9 @@
 This page is to generate or find the cards you will be using throughout the project
 
-If you are going to be creating or finding your own cards its preferable that your cards has the aspect ratio of 3:2 Height:Width (this is to avoid design complication later on in the project)
+If you are going to be creating or finding your own cards its preferable that your cards have the aspect ratio of 3:2 Height:Width (this is to avoid design complication later on in the project)
 You will be needing minimum of 10 different card faces and 1 card back (you can add more cards later if you want to increase the difficulty of your game)
 
-In your project create a directory called `images`, this folder will contain the images of your cards (for now 10 front cards and 1 back)
+In your project's `src` directory, create a directory called `images`, this folder will contain the images of your cards (for now 10 front cards and 1 back)
 
 Then create a javascript file called `data.js` which will contain the list of cards giving them an `id` to be able to compare cards later on in the project
 

@@ -1,3 +1,9 @@
+### Trello
+
+- Move the card 'As a player I can choose a difficulty level' from the `Backlog` list to the `Doing` list
+
+### Difficulty Component
+
 To let the player choose between the difficulties we will create a Difficulty component sending it the `setDifficulty` function
 
 This component will contain a title and 3 buttons for the player to choose the difficulty from
@@ -135,6 +141,10 @@ export default App;
 ```
 
 We changed the default value for the difficulty to be null so that in our code we can check if difficulty has a value it renders the game component we created earlier, if not it renders the Difficulty component
+
+### Trello
+
+- Move the card 'As a player I can choose a difficulty level' from the `Doing` list to the `Done` list
 
 ### Git
 

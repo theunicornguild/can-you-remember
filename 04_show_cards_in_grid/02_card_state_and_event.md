@@ -14,6 +14,10 @@ To do that we will be using a `useState`, which is an hook that contains a dynam
 
 Modify the code in `App.js` to look like the following code :
 
+### Trello
+
+Move the card 'As a player I can click a card to flip it over' from the `Backlog` list to the `Doing` list
+
 ```jsx
 import React from "react";
 import "./App.css";
@@ -57,3 +61,15 @@ As you can see we added a state and an event handler
 1. The state `flipped`'s default value is false
 2. Whenever the image element is clicked it calls the `changeFlip` function and passes it the new value of `flipped` which is `true`
 3. Now that we have a state that indicates whether the card is flip or not, in the `src` attribute of the image we can place an if condition that shows the front of the first card in the data file if true and shows the back card if false.
+
+###Trello
+
+- Move the card 'As a player I can click a card to flip it over' from the `Doing` list to the `Done` list
+
+###Git
+
+```shell
+$ git add .
+$ git commit -m "Cards can flip"
+$ git push
+```

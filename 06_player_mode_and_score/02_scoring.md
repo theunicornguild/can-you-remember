@@ -1,3 +1,9 @@
+### Trello
+
+- Move the cards `As a player in Single Player mode i can see the number of failed attempts` and `As a player in multiplayer mode I can see my score` from the `IceBox` List to the `Doing` list
+
+### Score Component
+
 To add score we will need to use the mode in the `Game` component therefore we have to pass the `mode` as props from `App.js`
 
 ```jsx
@@ -120,9 +126,6 @@ In the `Score` component, `Score.js`:
 import React from "react";
 
 // Components
-import MultiplayerScore from "./MultiplayerScore";
-import SingleplayerScore from "./SingleplayerScore";
-
 const Score = ({ mode, score, failedFlips, playerTurn }) => {
   return ({mode==="multi"? {/*1*/}
    <div className="col-3 border">
@@ -161,3 +164,15 @@ export default Score;
 
 1. The component checks for the mode so it shows scores if the mode is multiplayer and shows failed attempts if single
 2. If its in multiplayer mode, depending on the player's turn the player's name will be red in the player's turn
+
+### Trello
+
+- Move the cards `As a player in Single Player mode i can see the number of failed attempts` and `As a player in multiplayer mode I can see my score` from the `Doing` List to the `Done` list
+
+### Git
+
+```shell
+$ git add .
+$ git commit -m "Score showing"
+$ git push
+```
