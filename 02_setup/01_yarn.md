@@ -16,7 +16,7 @@ Now you can either clone our starter file to get the cards we used or create you
 
 **How to clone the starter file?**
 
-- Go to the project's [repo](http://starterfile.com)
+- Go to the project's [repo](https://github.com/khm56/can-you-remember)
 - Fork the project to your github account
 - Copy the url and go to your terminal/shell
 
