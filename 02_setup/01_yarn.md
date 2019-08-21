@@ -12,7 +12,7 @@ Yarn is a `JavaScript` manager and a task runner:
   ```
   This command will install yarn globally on your device
 
-Now you can either clone our starter file to get the cards we used or create your project from scratch (design your own cards)
+Now clone our starter file to get the cards we used
 
 **How to clone the starter file?**
 
@@ -21,25 +21,15 @@ Now you can either clone our starter file to get the cards we used or create you
 - Copy the url and go to your terminal/shell
 
 ```shell
-$ git clone <your url here>
+$ git clone https://github.com/<your-username>/can-you-remember
 ```
 
 ```shell
+$ cd can-you-remembers
 $ yarn install
 ```
 
 this will install the same version of any libraries we have installed in this project
-
-**How to create a `React App`?**
-
-- Using the terminal go to the location on your device where you want to create the project
-- then using the following command
-
-  ```shell
-   yarn create react-app can-you-remember
-  ```
-
-  this will create a folder that will contain your project files
 
 **How to run my project?**
 
@@ -50,3 +40,17 @@ this will install the same version of any libraries we have installed in this pr
   ```
   The first command will take you into the project's folder
   The second command will run your project
+
+---
+
+**How to create a `React App`?**
+(Just a guide you shouldn't do it because you already cloned)
+
+- Using the terminal go to the location on your device where you want to create the project
+- then using the following command
+
+  ```shell
+   yarn create react-app can-you-remember
+  ```
+
+  this will create a folder that will contain your project files
