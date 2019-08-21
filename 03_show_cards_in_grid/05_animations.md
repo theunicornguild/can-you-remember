@@ -4,7 +4,7 @@ To do that we will use a library available online
 If you used our `Starter File` ignore the yarn add
 
 ```shell
-yarn add react-card-flip
+$ yarn add react-card-flip
 ```
 
 Then in your `Card` Component import the library
