@@ -1,6 +1,6 @@
 ### Trello
 
-- Move the card 'As a player I can choose a difficulty level' from the `Backlog` list to the `Doing` list
+Move the card 'As a player I can choose a difficulty level' from the `Backlog` list to the `Doing` list
 
 ### Difficulty Component
 
@@ -144,7 +144,7 @@ We changed the default value for the difficulty to be null so that in our code w
 
 ### Trello
 
-- Move the card 'As a player I can choose a difficulty level' from the `Doing` list to the `Done` list
+Move the card 'As a player I can choose a difficulty level' from the `Doing` list to the `Done` list
 
 ### Git
 

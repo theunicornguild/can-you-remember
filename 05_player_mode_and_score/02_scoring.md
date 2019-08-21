@@ -1,6 +1,6 @@
 ### Trello
 
-- Move the cards `As a player in Single Player mode i can see the number of failed attempts` and `As a player in multiplayer mode I can see my score` from the `IceBox` List to the `Doing` list
+Move the cards `As a player in Single Player mode i can see the number of failed attempts` and `As a player in multiplayer mode I can see my score` from the `IceBox` List to the `Doing` list
 
 ### Score Component
 
@@ -167,7 +167,7 @@ export default Score;
 
 ### Trello
 
-- Move the cards `As a player in Single Player mode i can see the number of failed attempts` and `As a player in multiplayer mode I can see my score` from the `Doing` List to the `Done` list
+Move the cards `As a player in Single Player mode i can see the number of failed attempts` and `As a player in multiplayer mode I can see my score` from the `Doing` List to the `Done` list
 
 ### Git
 

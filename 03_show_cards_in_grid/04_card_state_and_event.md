@@ -59,7 +59,7 @@ As you can see we added a state and an event handler
 
 ### Trello
 
-- Move the card 'As a player I can click a card to flip it over' from the `Doing` list to the `Done` list
+Move the card 'As a player I can click a card to flip it over' from the `Doing` list to the `Done` list
 
 ### Git
 

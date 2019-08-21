@@ -1,4 +1,3 @@
----
 ### What do we need?
 
 Now that we have our card component ready to use we want to make the cards list dependent on the difficulty of the game and we want to duplicate the cards so that there is two of each
@@ -8,6 +7,7 @@ To start with this feature we will need the following
 1. If the difficulty is easy, normal, or hard we want to use the first six,8 or all cards from the `data` file, duplicate it then shuffle
 2. to shuffle we need to define a function that would shuffle an array
 3. store the shuffled cards and send them as props to the `Cards` component
+
 ---
 
 ### How to randomize cards ?

@@ -49,7 +49,7 @@ export default App;
 
 Running the code above will you show you all cards in your data file face down (This means you finished the `Trello` board card you were doing)
 
-- Move the card from the `Doing` list to `Done`
+Move the card from the `Doing` list to `Done`
 
 ---
 

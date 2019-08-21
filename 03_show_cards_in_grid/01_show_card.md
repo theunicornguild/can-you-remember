@@ -1,6 +1,6 @@
 ### Trello
 
-- Move the first card in the `Backlog` list which is "As a player I will see a grid of cards (face down)" to the `Doing` list
+Move the first card in the `Backlog` list which is "As a player I will see a grid of cards (face down)" to the `Doing` list
 
 ---
 
