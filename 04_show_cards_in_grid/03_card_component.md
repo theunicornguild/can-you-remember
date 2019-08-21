@@ -1,20 +1,6 @@
----
-### Trello
-
-Move the card you were doing to the `Done` list then move the next card from the `Backlog` which is "As a player i can click a card to flip it over" to your `Doing` list.
----
-
 ### Creating a Card and Grid Component
 
-Now testing the code you will encounter a problem, which is;
-
-1. Whenever you click one card all cards flip
-2. `App.js` is getting messy
-
-To solve this problem you can do one of 2 solutions but only one of which is efficient and clean
-
-1. Create a state for every card and hard code every card (repeat the card code over and over)
-2. Create a new `Component`
+`App.js` is getting messy so to clean our code we are going to refactor the `cards` code to a separate component
 
 ### What is a component?
 
@@ -71,12 +57,11 @@ const Card = ({ card }) => {
     <div className="col-3 my-1">
       <img
         className="mx-auto"
-        src={flipped ? card.front : cardBack}
+        src={cardBack}
         //   used percentages instead of pixels to be responsive with the screen size
         height="100%"
         width="100%"
         key="front"
-        onClick={() => changeFlip(true)}
       />
     </div>
   );
@@ -94,9 +79,9 @@ Those information can be data or functions
 
 2. This is how we used props in our `Card` functional component by putting it as parameters
 
-Now when you render your `App.js` The page will look exactly the same and cards flip individually
+Now when you render your `App.js` The page will look exactly the same
 
-Next : We're going to randomize and duplicate cards depending on the mode of the player
+Next : We're going to let the cards flip whenever they are clicked
 
 ###Git
 

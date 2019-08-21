@@ -13,17 +13,15 @@ import cards from "./data";
 import cardBack from "../images/CardBack.jpg";
 
 function App() {
-  const [flipped, changeFlip] = useState(false);
   let cardsGrid = cards.map(card => {
     return (
       <div className="col-3 my-1">
         <img
           className="mx-auto"
-          src={flipped ? card.front : cardBack}
+          src={cardBack}
           height="100%"
           width="100%"
           key="back"
-          onClick={() => changeFlip(true)}
         />
       </div>
     );

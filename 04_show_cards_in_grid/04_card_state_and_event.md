@@ -1,4 +1,4 @@
-Now that we created the card from the back, when the card is clicked nothing happens...
+Now that we created our cards all facing down, when the card is clicked nothing happens...
 
 This is because the clicking event is not handled therefore we will have to use two new features of react, events and states
 
@@ -19,40 +19,35 @@ Modify the code in `App.js` to look like the following code :
 Move the card 'As a player I can click a card to flip it over' from the `Backlog` list to the `Doing` list
 
 ```jsx
-import React from "react";
-import "./App.css";
-
-//Data
-import cards from "./data";
-
-// Card Back Image
+import React, { useState } from "react";
 import cardBack from "../images/CardBack.jpg";
 
-function App() {
-const [flipped, changeFlip] = useState(false); {/* 1 */}
+const Card = ({ card, checkFlipped }) => {
+  const [flipped, changeFlip] = useState(false);{/*1*/}
 
+  const handleFlip = () => {
+    if (flipped !== true) {
+      changeFlip(true);
+
+      checkFlipped({ id: card.id, changeFlip: changeFlip });
+    }
+  };
   return (
-    <div className="App border my-5">
-    <div className="container">
-      <div className="row">
-        <div className="col-3 my-1">
-            <img
+    <div className="col-3 my-1">
+        <img
           className="mx-auto"
-          src={flipped?card[0].front:cardBack} {/* 3 */}
+          src={flipped?card.front:cardBack} {/* 3 */}
+          //   used percentages instead of pixels to be responsive with the screen size
           height="100%"
           width="100%"
           key="back"
           onClick={() => changeFlip(true)} {/* 2 */}
         />
-        </div>
-      </div>
-    </div>
     </div>
   );
-}
+};
 
-export default App;
-
+export default Card;
 
 ```
 
