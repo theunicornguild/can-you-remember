@@ -1,14 +1,9 @@
 This page is to generate or find the cards you will be using throughout the project
 
-If you are going to be creating or finding your own cards its preferable that your cards have the aspect ratio of 3:2 Height:Width (this is to avoid design complication later on in the project)
-You will be needing minimum of 10 different card faces and 1 card back (you can add more cards later if you want to increase the difficulty of your game)
+We designed our cards to have the aspect ratio of 3:2 Height:Width (this is to avoid design complication later on in the project)
+We will be needing minimum of 10 different cards faces and 1 card back (you can add more cards later if you want to increase the difficulty of your game)
 
-In your project's `src` directory, create a directory called `images`, this folder will contain the images of your cards (for now 10 front cards and 1 back)
-
-Then create a javascript file called `data.js` which will contain the list of cards giving them an `id` to be able to compare cards later on in the project
-
-In your `data.js` file you will define an array and export it to use it in your code later
-Use the `code` below in your `data.js` file
+In the `data.js` file we defined an array for you and exported it to use it in your code later
 
 ```javascript
 //Cards Images import from the folder `images`
@@ -70,18 +65,10 @@ const cards = [
 
 // Here we are exporting the array of cards so that we can import it in any component as needed
 export default cards;
+
+//“All product and company names are trademarks™
+//or registered® trademarks of their respective holders.
+//Use of them does not imply any affiliation with or endorsement by them.”
 ```
 
-Now that you have defined the `data` you will be using in your project you are ready to start coding your components
-
-### Git
-
-Create a new checkpoint
-
-```shell
-$ git add .
-$ git commit -m "added images and data file to the project"
-$ git push
-```
-
----
+Now that you understand the `data` file you will be using it in your project.
