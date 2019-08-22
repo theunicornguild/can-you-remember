@@ -107,4 +107,4 @@ $ git push
 
 ---
 ### Demo
-[Games Modes](https://imgur.com/gPxqiOm.png)
+![Games Modes](https://imgur.com/gPxqiOm.png)

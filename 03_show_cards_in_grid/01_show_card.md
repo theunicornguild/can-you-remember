@@ -62,5 +62,5 @@ $ git push
 
 ---
 ### Demo
-[Card Back](https://imgur.com/5ax1KAi.png)
+![Card Back](https://imgur.com/5ax1KAi.png)
 

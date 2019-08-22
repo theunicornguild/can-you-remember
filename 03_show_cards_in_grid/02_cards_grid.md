@@ -63,4 +63,4 @@ $ git push
 
 ---
 ### Demo
-[Grid of cards](https://imgur.com/1Sd7uyZ.png)
+![Grid of cards](https://imgur.com/1Sd7uyZ.png)

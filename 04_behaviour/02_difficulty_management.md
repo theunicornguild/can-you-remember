@@ -157,6 +157,5 @@ $ git push
 ```
 
 ---
-
 ### Demo
-[Difficulty](https://imgur.com/D0AZIzv.png)
+![Difficulty](https://imgur.com/D0AZIzv.png)

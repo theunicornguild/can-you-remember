@@ -143,3 +143,6 @@ $ git add .
 $ git commit -m "Cards are being compared"
 $ git push
 ```
+---
+### Demo
+![Comparing Cards](https://imgur.com/0sMdUU8.png)
