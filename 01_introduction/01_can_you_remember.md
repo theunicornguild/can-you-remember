@@ -9,3 +9,6 @@ The technologies that will be used in this project are:
 - React
 - Bootstrap
 - Netlify
+
+
+![Game demo](https://imgur.com/AArTmYS)
