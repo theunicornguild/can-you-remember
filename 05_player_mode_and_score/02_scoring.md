@@ -176,3 +176,10 @@ $ git add .
 $ git commit -m "Score showing"
 $ git push
 ```
+
+---
+### Demo
+Single Player Mode:
+[SIngle Player failed attempts](https://imgur.com/AArTmYS.png)
+Multi Player Mode:
+[Multi player scoring](https://imgur.com/vKXM5Dr.png)

@@ -60,3 +60,7 @@ $ git add .
 $ git commit -m "Can see a grid of cards"
 $ git push
 ```
+
+---
+### Demo
+[Grid of cards](https://imgur.com/1Sd7uyZ.png)

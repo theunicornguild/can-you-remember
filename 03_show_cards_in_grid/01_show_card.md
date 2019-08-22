@@ -52,10 +52,15 @@ export default App;
 2. We gave the card div the class `col-3` and `my-1` so that we can only have `4` cards per row and with some space between every row
 3. Then we gave our image the class `mx-auto` from bootstrap to center the image in the div
 
-###Git
+### Git
 
 ```shell
 $ git add .
 $ git commit -m "Game layout"
 $ git push
 ```
+
+---
+### Demo
+[Card Back](https://imgur.com/5ax1KAi.png)
+

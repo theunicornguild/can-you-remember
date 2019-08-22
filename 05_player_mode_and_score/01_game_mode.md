@@ -104,3 +104,7 @@ $ git add .
 $ git commit -m "Mode choice done"
 $ git push
 ```
+
+---
+### Demo
+[Games Modes](https://imgur.com/gPxqiOm.png)
