@@ -11,4 +11,4 @@ The technologies that will be used in this project are:
 - Netlify
 
 
-![Game demo](https://imgur.com/AArTmYS)
+![Game demo](https://imgur.com/AArTmYS.png)
