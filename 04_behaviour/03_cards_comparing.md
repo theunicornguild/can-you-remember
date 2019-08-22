@@ -145,4 +145,4 @@ $ git push
 ```
 ---
 ### Demo
-![Comparing Cards](https://imgur.com/0sMdUU8.png)
+![Comparing Cards](https://imgur.com/moP0zhX.png)
