@@ -76,4 +76,8 @@ $ git push
 
 ### Trello
 
-You can now move the card 'As a player I can click a card to flip it over' from the `Doing` list to the `Done` list
+You can now move the card
+
+> 'As a player I can click a card to flip it over'
+
+from the `Doing` list to the `Done` list

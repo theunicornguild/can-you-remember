@@ -69,6 +69,8 @@ $ git push
 
 ### Trello
 
-This means you finished the "As a player I will see a grid of cards (face down)" card.
+This means you finished the card
+
+> "As a player I will see a grid of cards (face down)"
 
 Move the card from the `Doing` list to `Done`

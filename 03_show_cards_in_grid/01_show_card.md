@@ -1,6 +1,8 @@
 ### Trello
 
-The first feature we will be working on is "As a player I will see a grid of cards (face down)"
+The first feature we will be working on is
+
+> "As a player I will see a grid of cards (face down)"
 
 Move this card from the `Backlog` list to the `Doing` list
 
