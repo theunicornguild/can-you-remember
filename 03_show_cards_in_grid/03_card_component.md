@@ -74,6 +74,7 @@ export default Card; /* 3 */
 
 1. We define a `Card` function that recieve a `card` prop. We assume his will be a single card object from our `cards` array.
 2. We render the `JSX` for our card (taken from `App.js`). Note that the `src` for `img` on the card comes from the `card.image`. This means every card that we render will show the image for that card.
+3. We export `Card` so it can be used elsewhere in our code.
 
 ---
 
