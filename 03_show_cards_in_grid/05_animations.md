@@ -64,7 +64,7 @@ The flipping of your cards should now be much nicer for the user.
 
 ---
 
-###Git
+### Git
 
 ```shell
 $ git add .
