@@ -1,14 +1,17 @@
 ### What is `Can you remember?`
 
-- Can you remember is a single and multiplayer memory game, where the player has to flip two cards that has the same company logo, In single player mode the player can track his failed attempts so the challenge is to finish the same difficulty with the least possible attempt, In multi player mode the players take turns and whoever gets a right guess continues until they flip two wrong cards then it's the other player's turn, the winner has the highest score
+Can you remember is a classic memory card game where the player has to flip cards in a grid, matching the cards that have the same image on them.
 
-Take a look at the demo website to get a better idea to what you're going to be building throughout this [project](https://can-you-remember.netlify.com/)
+In single player mode the player can track his failed attempts so the challenge is to finish the same difficulty with the least possible mistakes.
+
+In multi player mode, players take turns to flip the cards. A player who guesses right continues playing until they flip two wrong cards. The winner is the player with the highest score.
+
+Take a look at the [demo website](https://can-you-remember.netlify.com/) to get a better idea of what you're going to be building throughout this project.
 
 The technologies that will be used in this project are:
 
-- React
-- Bootstrap
-- Netlify
-
+- React (for developing the game)
+- Bootstrap (for handling the layout and design)
+- Netlify (for deployment)
 
 ![Game demo](https://imgur.com/AArTmYS.png)
