@@ -41,7 +41,7 @@ function App() {
 export default App;
 ```
 
-1. We import our cards array from `data.js` and store it ina variable called `cards`
+1. We import our array from `data.js` and store it as an array called `cards`
 2. We iterate over the `cards` array using `.map` and return a `div` for every card. We store this array of divs in an array called `cardsGrid`
 3. We use `cardsGrid` in our `JSX` code to render all the cards. By using Bootstrap's `row` and `col-3` classes the cards will appear in a grid
 
