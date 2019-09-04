@@ -55,7 +55,7 @@ You should now have a grid of face-down cards with all cards from your `data.js`
 
 ---
 
-### Github
+### Git
 
 ```shell
 $ git add .

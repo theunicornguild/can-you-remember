@@ -124,7 +124,7 @@ You should still have a grid of cards but each one will now have a unique image
 
 ---
 
-###Git
+### Git
 
 ```shell
 $ git add .
