@@ -4,15 +4,13 @@ To start creating our project we need to do the following steps:
 - Create a React App
 
 **What is `yarn`?**
-Yarn is a `JavaScript` manager and a task runner:
+Yarn is a `JavaScript` package manager and task runner:
 
-- Install yarn using the following command
+- Install yarn using the following command in the terminal on mac ([click here](https://yarnpkg.com/en/docs/install#windows-stable) if you're a windows user)
   ```shell
   $ brew install yarn
   ```
   This command will install yarn globally on your device
-
-Now clone our starter file to get the cards we used
 
 **How to clone the starter file?**
 
@@ -33,21 +31,18 @@ this will install the same version of any libraries we have installed in this pr
 
 **How to run my project?**
 
-- To run your project and see the changes you make live in your browser use the following commands
+- To run your project and see the changes you make live in your browser run the following wommand form inside your project directory:
   ```shell
-  cd can-you-remember
   yarn start
   ```
-  The first command will take you into the project's folder
-  The second command will run your project
 
 ---
 
 **How to create a `React App`?**
-(Just a guide you shouldn't do it because you already cloned)
+(Just a guide you shouldn't do it if you already cloned)
 
 - Using the terminal go to the location on your device where you want to create the project
-- then using the following command
+- Run the following command
 
   ```shell
    yarn create react-app can-you-remember
