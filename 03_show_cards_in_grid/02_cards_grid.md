@@ -1,8 +1,6 @@
 Obviously, our game won't consist of one card. We want multiple cards.
 
-We can import our cards from the `data.js` file and iterate over them to show them all on the screen.
-
-look at the code below:
+We can import our cards from the `data.js` file and iterate over them to show them all on the screen:
 
 ```jsx
 import React from "react";
