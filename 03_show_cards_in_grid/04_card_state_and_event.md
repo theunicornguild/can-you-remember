@@ -2,7 +2,9 @@
 
 Now that we created our cards all facing up, when the card is clicked nothing happens...
 
-The next feature we want to work on is 'As a player I can click a card to flip it over'.
+The next feature we want to work on is
+
+> 'As a player I can click a card to flip it over'
 
 Move the card from the `Backlog` list to the `Doing` list
 
