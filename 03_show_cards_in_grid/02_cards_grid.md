@@ -1,4 +1,6 @@
-Now that we have one card ready we can iterate over all cards in the data file and show them all on the screen
+Obviously, our game won't consist of one card. We want multiple cards.
+
+We can import our cards from the `data.js` file and iterate over them to show them all on the screen.
 
 look at the code below:
 
@@ -7,7 +9,7 @@ import React from "react";
 import "./App.css";
 
 //Data
-import cards from "./data";
+import cards from "./data"; /* 1 */
 
 // Card Back Image
 import cardBack from "../images/CardBack.jpg";
@@ -25,12 +27,13 @@ function App() {
         />
       </div>
     );
-  }); /* 1 */
+  }); /* 2 */
+
   return (
     <div className="App border my-5">
       <div className="container">
         <div className="row">
-          {cardsGrid} {/* 2 */}
+          {cardsGrid} {/* 3 */}
         </div>
       </div>
     </div>
@@ -40,16 +43,17 @@ function App() {
 export default App;
 ```
 
-1. Iterating over the cards in the data file and creating a card div and storing it in an array called `cardsGrid`
-2. Calling `cardsGrid` in your code to render the list
+1. We import our cards array from `data.js` and store it ina variable called `cards`
+2. We iterate over the `cards` array using `.map` and return a `div` for every card. We store this array of divs in an array called `cardsGrid`
+3. We use `cardsGrid` in our `JSX` code to render all the cards. By using Bootstrap's `row` and `col-3` classes the cards will appear in a grid
 
 ---
 
-### Trello
+### Demo
 
-Running the code above will you show you all cards in your data file face down (This means you finished the `Trello` board card you were doing)
+You should now have a grid of face-down cards with all cards from your `data.js` file
 
-Move the card from the `Doing` list to `Done`
+![Grid of cards](https://imgur.com/1Sd7uyZ.png)
 
 ---
 
@@ -57,10 +61,14 @@ Move the card from the `Doing` list to `Done`
 
 ```shell
 $ git add .
-$ git commit -m "Can see a grid of cards"
+$ git commit -m "Show a grid of face-down cards"
 $ git push
 ```
 
 ---
-### Demo
-![Grid of cards](https://imgur.com/1Sd7uyZ.png)
+
+### Trello
+
+This means you finished the "As a player I will see a grid of cards (face down)" card.
+
+Move the card from the `Doing` list to `Done`

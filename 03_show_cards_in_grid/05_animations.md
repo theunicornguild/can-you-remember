@@ -1,45 +1,42 @@
-Now we want to add some animations to our cards so that they look like they are actually flipping
+Before we mark this feature as `Done` on Trello, let's add some animations to our cards so that they look like they are actually flipping. This will be much nicer for the user.
 
-To do that we will use a library available online
-If you used our `Starter File` ignore the yarn add
+To do that we will use an animation library for React (**KHALID - remove the library from the starter repo so they have to install**):
 
 ```shell
 $ yarn add react-card-flip
 ```
 
-Then in your `Card` Component import the library
+Now we can import and use this library in our `Card` Component:
 
 ```jsx
 import React, { useState } from "react";
-import cardBack from "../images/CardBack.jpg"; //1
-import ReactCardFlip from "react-card-flip";
+import ReactCardFlip from "react-card-flip"; /* 1 */
+
+import cardBack from "../images/CardBack.jpg";
 
 const Card = ({ card }) => {
   const [flipped, changeFlip] = useState(false);
 
-  const handleFlip = () => { //2
-    if (flipped !== true) {
-      changeFlip(true);
-        );
-    }
+  /* 3 */
+  const handleFlip = () => {
+    changeFlip(!flipped);
   };
+
   return (
     <div className="col-3 my-1">
-      <ReactCardFlip isFlipped={flipped} {/* 3 */} flipDirection="horizontal">
+      {/* 2 */}
+      <ReactCardFlip isFlipped={flipped} flipDirection="horizontal">
         <img
           className="mx-auto"
           src={cardBack}
-          //   used percentages instead of pixels to be responsive with the screen size
           height="100%"
           width="100%"
           key="front"
           onClick={() => handleFlip()}
         />
-
         <img
           className="mx-auto"
           src={card.front}
-          //   used percentages instead of pixels to be responsive with the screen size
           height="100%"
           width="100%"
           key="back"
@@ -51,14 +48,21 @@ const Card = ({ card }) => {
 };
 
 export default Card;
-
 ```
 
-1. Importing the library so we can use it within our component
-2. We defined a function to flip the card only if its un-flipped otherwise do nothing- the reason we are going to use a function because we are going to do more than one thing whenever a card is flipped
-3. As per the library's documentation, we have to put two images elements inside the `ReactCardFlip` and define the attribute `isFlipped` which should have a boolean value that indicates whether the card is flipped or not and the attribute `flipDirection` which takes the value horizontal or vertical depending on how you want the card to flip
+1. We import the `ReactCardFlip` component from the library so we can use it within our component
+2. We move the card flipping event handler into a function. We do this so we don't end up writing the function twice - once for each image. This will help us later when this function becomes more complicated.
+3. Based on `react-card-flip`'s [documentation](https://www.npmjs.com/package/react-card-flip), we have to put two images elements inside the `ReactCardFlip` component - the first image is the back of the card, the second image is the front. We also pass an `isFlipped` prop which should have a boolean value that indicates whether the card is flipped or not. Finally, the `flipDirection` prop takes the string `horizontal` because that's how we want the cards to flip.
 
-You can find the documentation of this library [Here](https://www.npmjs.com/package/react-card-flip)
+---
+
+### Demo
+
+The flipping of your cards should now be much nicer for the user.
+
+**KHALID ADD A GIF FOR THIS**
+
+---
 
 ###Git
 
@@ -67,3 +71,9 @@ $ git add .
 $ git commit -m "Added card animations"
 $ git push
 ```
+
+---
+
+### Trello
+
+You can now move the card 'As a player I can click a card to flip it over' from the `Doing` list to the `Done` list
