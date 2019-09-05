@@ -94,7 +94,7 @@ export default Card;
 
 You should now have a grid of cards that are initally all face-up. Clicking on a card "flips" it.
 
-**KHALID ADD A GIF FOR THIS**
+![Flipping Cards](https://imgur.com/UBr1tnL.gif)
 
 ---
 

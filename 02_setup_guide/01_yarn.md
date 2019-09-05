@@ -33,7 +33,7 @@ this will install the same version of any libraries we have installed in this pr
 
 **How to run my project?**
 
-To run your project and see the changes you make live in your browser run the following wommand form inside your project directory:
+To run your project and see the changes you make live in your browser run the following command form inside your project directory:
 
 ```shell
 yarn start

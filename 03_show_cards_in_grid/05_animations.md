@@ -1,6 +1,6 @@
 Before we mark this feature as `Done` on Trello, let's add some animations to our cards so that they look like they are actually flipping. This will be much nicer for the user.
 
-To do that we will use an animation library for React (**KHALID - remove the library from the starter repo so they have to install**):
+To do that we will use an animation library for React:
 
 ```shell
 $ yarn add react-card-flip
@@ -60,7 +60,7 @@ export default Card;
 
 The flipping of your cards should now be much nicer for the user.
 
-**KHALID ADD A GIF FOR THIS**
+![Animated Flipping](https://imgur.com/VJAhm3h.gif)
 
 ---
 

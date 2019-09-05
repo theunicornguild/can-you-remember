@@ -120,7 +120,7 @@ export default App;
 
 You should still have a grid of cards but each one will now have a unique image
 
-**KHALID ADD AN IMAGE FOR THIS**
+[Cards Images](https://imgur.com/XDZXYp2.png)
 
 ---
 
