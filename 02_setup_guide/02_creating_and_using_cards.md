@@ -1,9 +1,8 @@
-This page is to generate or find the cards you will be using throughout the project
+In your project directory you should have a `src/data.js` file.
 
-We designed our cards to have the aspect ratio of 3:2 Height:Width (this is to avoid design complication later on in the project)
-We will be needing minimum of 10 different cards faces and 1 card back (you can add more cards later if you want to increase the difficulty of your game)
+This file should contain an array of card objects with the images to show on those cards. This array is `export`ed at the end so you can `import` it into your project later on.
 
-In the `data.js` file we defined an array for you and exported it to use it in your code later
+We will be importing a minimum of 10 different cards faces from the `src/images/` directory (you can add more cards later if you want to increase the difficulty of your game). Our images have an aspect ratio of 3:2 Height:Width (this is to avoid design complication later on in the project). You should also find a `CardBack.jpg` image that we will be using later for the back of all the cards.
 
 ```javascript
 //Cards Images import from the folder `images`
@@ -18,9 +17,9 @@ import PaypalCard from "./images/PaypalCard.jpg";
 import TwitterCard from "./images/TwitterCard.jpg";
 import UberCard from "./images/UberCard.jpg";
 
-//Defining a constant named cards
+//Defining a constant array named cards
 const cards = [
-  //Creating objects of cards that has the key `id` with a unique value and a `front` key with the picture of one of the cards as a value
+  //Creating card object that have an `id` with a unique value and a `front` with one of the imported images
   {
     id: 1,
     front: AppleCard
@@ -66,9 +65,11 @@ const cards = [
 // Here we are exporting the array of cards so that we can import it in any component as needed
 export default cards;
 
-//“All product and company names are trademarks™
-//or registered® trademarks of their respective holders.
-//Use of them does not imply any affiliation with or endorsement by them.”
+/******
+ * All product and company names are trademarks™
+ * or registered® trademarks of their respective holders.
+ * Use of them does not imply any affiliation with or endorsement by them.
+ ******
 ```
 
-Now that you understand the `data` file you will be using it in your project.
+Now that you understand the `data.js` file you will be using it in your project.

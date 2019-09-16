@@ -1,19 +1,84 @@
 ### Creating a Card and Grid Component
 
-`App.js` is getting messy so to clean our code we are going to refactor the `cards` code to a separate component
+`App.js` is getting messy so to clean our code we are going to refactor the `JSX` for an individual card into a separate _component_.
+
+---
 
 ### What is a component?
 
-- Components are independent segments of code that split the user interface to manageable, cleaner, reusable pieces. You can think of them as custom HTML elements.
+Components are independent segments of code that split the user interface to manageable, cleaner, reusable pieces. You can think of them as customizable HTML elements.
 
-In other words components lets your code look cleaner, more understandable and helps you debug and trace your code easily incase of any errors
+In other words components let your code look cleaner, more understandable and helps you debug and trace your code easily incase of any errors.
 
-Create a folder in your project and name it`Components`
-In your `Components` folder create a file named `Card.js` which will include your Card component's code
+A component is defined as a function that returns `JSX`:
 
-We will remove some code from the `App.js` component and add it to the `Card.js` component to look like the following :
+```jsx
+const Component = () => {
+  return (
+    <div>
+      <h1>I'M A COMPONENT</h1>
+    <div>
+  )
+}
+```
 
-`App.js`:
+---
+
+### What are props?
+
+Props are information that is passed to a component to customize it (what is looks like, how it behaves, etc):
+
+```jsx
+const Person = ({name}) => {
+  return (
+    <div>
+      <h1>HELLO I'M {name}</h1>
+    <div>
+  )
+}
+```
+
+Props can be values, data or functions.
+
+---
+
+To make our `Card` component, first create a folder in your project and name it `Components`.
+
+In your `Components` folder create a file named `Card.js` which will include your Card component's code.
+
+We will remove some code from the `App.js` and add it to the `Card.js` component to look like the following:
+
+`Cards.js`:
+
+```jsx
+import React from "react";
+
+/* 1 */
+const Card = ({ card }) => {
+  return (
+    <div className="col-3 my-1">
+      {/* 2 */}
+      <img
+        className="mx-auto"
+        src={card.image}
+        height="100%"
+        width="100%"
+        key="front"
+      />
+    </div>
+  );
+};
+
+export default Card; /* 3 */
+```
+
+1. We define a `Card` function that recieve a `card` prop. We assume his will be a single card object from our `cards` array.
+2. We render the `JSX` for our card (taken from `App.js`). Note that the `src` for `img` on the card comes from the `card.image`. This means every card that we render will show the image for that card.
+3. We export `Card` so it can be used elsewhere in our code.
+
+---
+
+Now that we have a `Card` component, we can rewrite `App.js` to use it instead of hard-coding the `JSX`:
 
 ```jsx
 import React from "react";
@@ -26,10 +91,13 @@ import cards from "./data";
 import cardBack from "./images/CardBack.jpg";
 
 //Components
-import Card from "./Components/Card";
+import Card from "./Components/Card"; /* 1 */
 
 function App() {
-  let cardsGrid = cards.map(card => <Card card={card} />); /* 1 */
+  let cardsGrid = cards.map(card => (
+    <Card key={card.id} card={card} />
+  )); /* 2, 3 */
+
   return (
     <div className="App border my-5">
       <div className="container">
@@ -42,48 +110,21 @@ function App() {
 export default App;
 ```
 
-`Cards.js`:
+1. We import the `Card` component
+2. Instead of hard-coded `JSX`, we use the `Card` component in our `.map`. Notice how we're passing the `card` we're iterating over into the component as a prop called `card`. This will make `cardsGrid` an array of **unique** `Card` components, each representing a different card form the `cards` array.
+3. Notice how we're also passing a `key` prop. This won't affect the way the card looks - it's there to help React manage the rendering of the `Card` components. It's important to add `key`s every time we interate to create a list of components.
 
-```jsx
-import React, { useState } from "react";
-import cardBack from "../images/CardBack.jpg";
-import ReactCardFlip from "react-card-flip";
+---
 
-const Card = ({ card }) => {
-  /* 2 */
-  const [flipped, changeFlip] = useState(false);
+### Demo
 
-  return (
-    <div className="col-3 my-1">
-      <img
-        className="mx-auto"
-        src={cardBack}
-        //   used percentages instead of pixels to be responsive with the screen size
-        height="100%"
-        width="100%"
-        key="front"
-      />
-    </div>
-  );
-};
+You should still have a grid of cards but each one will now have a unique image
 
-export default Card;
-```
+![Cards Images](https://imgur.com/XDZXYp2.png)
 
-1. After we have imported the `Card` component, when calling it we have to pass `props`
+---
 
-### What are props?
-
-Props are information that are passed between components
-Those information can be data or functions
-
-2. This is how we used props in our `Card` functional component by putting it as parameters
-
-Now when you render your `App.js` The page will look exactly the same
-
-Next : We're going to let the cards flip whenever they are clicked
-
-###Git
+### Git
 
 ```shell
 $ git add .
