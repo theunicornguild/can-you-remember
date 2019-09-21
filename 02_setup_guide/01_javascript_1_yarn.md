@@ -16,7 +16,7 @@ This command will install yarn globally on your device
 
 **How to clone the starter file?**
 
-- Go to the project's [repo](https://github.com/khm56/can-you-remember)
+- Go to the project's [repo](https://github.com/CODEDHQ/can-you-remember)
 - Fork the project to your github account
 - Copy the url and go to your terminal/shell
 

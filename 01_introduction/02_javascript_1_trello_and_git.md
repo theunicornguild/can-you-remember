@@ -20,4 +20,4 @@ Right now all the cards are in the `backlog` list because we haven't started wor
 
 We'll be using git throughout the project as a version control tool and to keep track of the changes we're making to the code and create checkpoints every time we finish a feature.
 
-You can create a new repo on [github](https://github.com/) to start your project from scratch or [Fork and clone](https://github.com/) our repo to get the starter files, including some pre-made cards with their images.
+[Fork and clone](https://github.com/CODEDHQ/can-you-remember) our repo to get the starter files, including some pre-made cards with their images.
