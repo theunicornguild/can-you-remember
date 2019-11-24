@@ -10,7 +10,7 @@ Move this card from the `Backlog` list to the `Doing` list
 
 ### Card
 
-We will start by placing creating a single `JSX` card on the page.
+We will start by placing a single `JSX` card on the page.
 
 In `App.js` your code should look like the following:
 
@@ -22,24 +22,25 @@ import "./App.css";
 import cards from "./data";
 
 // Card Back Image
-import cardBack from "../images/CardBack.jpg";
+import cardBack from "./images/CardBack.jpg";
 
 function App() {
-
-
   return (
     <div className="App border my-5">
       <div className="container">
-        <div className="row"> {/* 1 */}
-          <div className="col-3 my-1"> {/* 2 */}
-              <img
-                className="mx-auto" {/* 3 */}
-                src={cardBack}
-                //   used percentages instead of pixels to be responsive with the screen size
-                height="100%"
-                width="100%"
-                key="back"
-              />
+        <div className="row">
+          {/* 1 */}
+          <div className="col-3 my-1">
+            {/* 2 */}
+            <img
+              className="mx-auto"
+              src={cardBack}
+              //   used percentages instead of pixels to be responsive with the screen size
+              height="100%"
+              width="100%"
+              key="back"
+            />
+            {/* 3 */}
           </div>
         </div>
       </div>
@@ -48,8 +49,6 @@ function App() {
 }
 
 export default App;
-
-
 ```
 
 1. We placed the class `row` from bootstrap to make sure the cards inside the div are placed on the same line

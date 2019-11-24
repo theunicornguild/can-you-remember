@@ -34,16 +34,19 @@ This code will be called later on and we will pass it an array it will return th
 Then in our `App.js` file place the following code :
 
 ```jsx
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 // Data
-import allCards from "../data";
+import allCards from "./data";
 
 // Utils
 import { shuffle } from "./utils";
 
 // Components
-import Card from "./Card";
+import Card from "./Components/Card";
+
+//CSS
+import "./App.css";
 
 const App = () => {
   const [cards, setCards] = useState([]);
@@ -65,7 +68,7 @@ const App = () => {
   setCards(() => shuffle([...cardsTemp, ...cardsTemp])); //2
 
   //Mapping through the array of cards and placing them in the card component
-  const cardList = cards.map((card, idx) => (
+  const cardsGrid = cards.map((card, idx) => (
     <Card key={`${card.id}-${idx}`} card={card} />
   ));
 
@@ -74,7 +77,7 @@ const App = () => {
       <div className="container">
         <div className="row">
           <div className="col-9">
-            <div className="row border">{cardList}</div>
+            <div className="row border">{cardsGrid}</div>
           </div>
         </div>
       </div>
@@ -89,15 +92,3 @@ The code above will allow you to see a grid of cards, in rows of fours and you c
 
 1. We defined a state with the initial value "easy" for now we will have to set the difficulty depending on the user choice
 2. We set the cards state to a duplicate of the cards required shuffled
-
-### Git
-
-Create a new checkpoint
-
-```shell
-$ git add .
-$ git commit -m "Done with randomizing card behavior "
-$ git push
-```
-
----

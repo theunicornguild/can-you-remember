@@ -1,7 +1,3 @@
-### Trello
-
-Move the cards `As a player in Single Player mode i can see the number of failed attempts` and `As a player in multiplayer mode I can see my score` from the `IceBox` List to the `Doing` list
-
 ### Score Component
 
 To add score we will need to use the mode in the `Game` component therefore we have to pass the `mode` as props from `App.js`
@@ -115,8 +111,8 @@ export default Game;
 2. A boolean that indicates whether its the first player's turn (true) or second player's turn (false)
 3. An integer that keeps record of failed attempts for single player mode
 4. In the `checkFlipped` function if the flipped cards are not equivalent the failed flips state increases by 1
-5. if the cards don't match the player's turn gets switched
-6. if the cards match and its in multiplayer mode the score of the corresponding player increases
+5. If the cards don't match the player's turn gets switched
+6. If the cards match and its in multiplayer mode the score of the corresponding player increases
 7. Score component that will show the score
 
 In the `Score` component, `Score.js`:
@@ -127,16 +123,18 @@ import React from "react";
 
 // Components
 const Score = ({ mode, score, failedFlips, playerTurn }) => {
-  return ({mode==="multi"? {/*1*/}
+  return
+  <div>
+  ({mode==="multi"? {/*1*/}
    <div className="col-3 border">
       <h3>Score</h3>
       <table className="table table-responsive mx-auto">
         <thead>
           <tr>
-            <th scope="col" className={playerTurn && "text-danger"}> {/*2*/}
+            <th scope="col" className={playerTurn && "text-danger"}>
               Player 1
             </th>
-            <th scope="col" className={!playerTurn && "text-danger"}> {/*2*/}
+            <th scope="col" className={!playerTurn && "text-danger"}>
               Player 2
             </th>
           </tr>
@@ -155,6 +153,7 @@ const Score = ({ mode, score, failedFlips, playerTurn }) => {
       </div>
     </div>
   })
+  </div>
 };
 
 export default Score;
@@ -165,20 +164,10 @@ export default Score;
 1. The component checks for the mode so it shows scores if the mode is multiplayer and shows failed attempts if single
 2. If its in multiplayer mode, depending on the player's turn the player's name will be red in the player's turn
 
-### Trello
-
-Move the cards `As a player in Single Player mode i can see the number of failed attempts` and `As a player in multiplayer mode I can see my score` from the `Doing` List to the `Done` list
-
-### Git
-
-```shell
-$ git add .
-$ git commit -m "Score showing"
-$ git push
-```
-
 ---
+
 ### Demo
+
 Single Player Mode:
 ![Single Player failed attempts](https://imgur.com/AArTmYS.png)
 Multi Player Mode:

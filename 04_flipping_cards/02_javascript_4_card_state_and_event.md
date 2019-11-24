@@ -1,16 +1,6 @@
-### Trello
-
 Now that we created our cards all facing up, when the card is clicked nothing happens...
 
-The next feature we want to work on is
-
-> 'As a player I can click a card to flip it over'
-
-Move the card from the `Backlog` list to the `Doing` list
-
----
-
-Nothing is happening because because we are not **listening** for or **handling** the click event on the card.
+Nothing is happening because we are not **listening** for or **handling** the click event on the card.
 
 We will have to use two new features of react - _events_ and _state_.
 
@@ -95,13 +85,3 @@ export default Card;
 You should now have a grid of cards that are initally all face-up. Clicking on a card "flips" it.
 
 ![Flipping Cards](https://imgur.com/UBr1tnL.gif)
-
----
-
-### Git
-
-```shell
-$ git add .
-$ git commit -m "Cards can flip"
-$ git push
-```

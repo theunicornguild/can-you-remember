@@ -52,23 +52,3 @@ export default App;
 You should now have a grid of face-down cards with all cards from your `data.js` file
 
 ![Grid of cards](https://imgur.com/1Sd7uyZ.png)
-
----
-
-### Git
-
-```shell
-$ git add .
-$ git commit -m "Show a grid of face-down cards"
-$ git push
-```
-
----
-
-### Trello
-
-This means you finished the card
-
-> "As a player I will see a grid of cards (face down)"
-
-Move the card from the `Doing` list to `Done`
