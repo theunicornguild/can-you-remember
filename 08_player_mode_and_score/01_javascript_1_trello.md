@@ -16,3 +16,4 @@ In this chapter we will be creating a new component to handle player choices of 
 - Functions
 - States
 - Events
+- Refactoring
