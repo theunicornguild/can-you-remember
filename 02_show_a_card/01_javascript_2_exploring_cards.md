@@ -1,4 +1,4 @@
-In your project directory you should have a `src/data.js` file.
+In your project directory after `cloning` you should have a `src/data.js` file.
 
 This file should contain an array of card objects with the images to show on those cards. This array is `export`ed at the end so you can `import` it into your project later on.
 

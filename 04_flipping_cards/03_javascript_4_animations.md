@@ -61,23 +61,3 @@ export default Card;
 The flipping of your cards should now be much nicer for the user.
 
 ![Animated Flipping](https://imgur.com/VJAhm3h.gif)
-
----
-
-### Git
-
-```shell
-$ git add .
-$ git commit -m "Added card animations"
-$ git push
-```
-
----
-
-### Trello
-
-You can now move the card
-
-> 'As a player I can click a card to flip it over'
-
-from the `Doing` list to the `Done` list

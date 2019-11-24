@@ -1,7 +1,3 @@
-### Trello
-
-Move the card 'As a player I can choose a difficulty level' from the `Backlog` list to the `Doing` list
-
 ### Difficulty Component
 
 To let the player choose between the difficulties we will create a Difficulty component sending it the `setDifficulty` function
@@ -91,15 +87,15 @@ const Game = ({ difficulty }) => {
   }, [difficulty]); //1
 
   //Mapping through the array of cards and placing them in the card component
-  const cardList = cards.map((card, idx) => (
-    <Card key={`${card.id}-${idx}`} card={card} checkFlipped={checkFlipped} />
+  const cardsGrid = cards.map((card, idx) => (
+    <Card key={`${card.id}-${idx}`} card={card} />
   ));
 
   return (
     <div className="container">
       <div className="row">
         <div className=" col-9">
-          <div className="row border">{cardList}</div>
+          <div className="row border">{cardsGrid}</div>
         </div>
       </div>
     </div>
@@ -110,16 +106,15 @@ export default Game;
 ```
 
 You will notice a new import `useEffect`
-use Effect is used to do certain actions when the components is being rendered, when the components gets rendered and when a specific specified variable changes
+use Effect is used to do certain actions when the components are being rendered, when the components get rendered and when a specific specified variable changes
 
-In our case when the components is being rendered the cards get set and shuffled then whenever the difficulty is changed the component gets re-rendered
+In our case when the components are being rendered the cards get set and shuffled then whenever the difficulty is changed the component gets re-rendered
 
 With this new component made, your `App.js. will look like that:
 
 ```jsx
 import React, { useState } from "react";
 import "./App.css";
-import Home from "./Components/Home";
 import Difficulty from "./Components/Difficulty";
 import Game from "./Components/Game";
 
@@ -142,20 +137,8 @@ export default App;
 
 We changed the default value for the difficulty to be null so that in our code we can check if difficulty has a value it renders the game component we created earlier, if not it renders the Difficulty component
 
-### Trello
-
-Move the card 'As a player I can choose a difficulty level' from the `Doing` list to the `Done` list
-
-### Git
-
-Create a new checkpoint
-
-```shell
-$ git add .
-$ git commit -m "Done with Difficulty component"
-$ git push
-```
-
 ---
+
 ### Demo
+
 ![Difficulty](https://imgur.com/D0AZIzv.png)

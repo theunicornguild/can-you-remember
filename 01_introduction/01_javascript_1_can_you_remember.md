@@ -6,7 +6,7 @@ In single player mode the player can track his failed attempts so the challenge 
 
 In multi player mode, players take turns to flip the cards. A player who guesses right continues playing until they flip two wrong cards. The winner is the player with the highest score.
 
-Take a look at the [demo website](https://can-you-remember.netlify.com/) to get a better idea of what you're going to be building throughout this project.
+Take a look at the [demo website](https://can-you-remember.codeunicorn.io/) to get a better idea of what you're going to be building throughout this project.
 
 The technologies that will be used in this project are:
 
@@ -15,3 +15,9 @@ The technologies that will be used in this project are:
 - Netlify (for deployment)
 
 ![Game demo](https://imgur.com/AArTmYS.png)
+
+---
+
+#### Git
+
+We'll be using git throughout the project as a version control tool and to keep track of the changes we're making to the code and create checkpoints every time we finish a feature.

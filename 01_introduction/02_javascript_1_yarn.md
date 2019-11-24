@@ -25,7 +25,7 @@ $ git clone https://github.com/<your-username>/can-you-remember
 ```
 
 ```shell
-$ cd can-you-remembers
+$ cd can-you-remember
 $ yarn install
 ```
 

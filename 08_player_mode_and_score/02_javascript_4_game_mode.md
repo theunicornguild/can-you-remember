@@ -1,7 +1,3 @@
-### Trello
-
-Move the card 'As a player I can choose between single and multiplayer mode' from the `Backlog` list to the `Doing` list
-
 ### Mode Component
 
 To allow the player to choose between single and multiplayer mode we will do the following
@@ -89,22 +85,12 @@ export default App;
 ```
 
 1. We defined a new state to store the mode of the game and the initial value of the mode is null
-2. we created a function that will determine which component to get rendered depending on the states `difficulty` and `mode`, if there is a difficulty the `Game` component will be rendered, but there cant be a difficulty until the mode is set , thats what the next if statement does, if the value of mode is null, the `Home` component is rendered otherwise the difficulty component
+2. We created a function that will determine which component to get rendered depending on the states `difficulty` and `mode`, if there is a difficulty the `Game` component will be rendered, but there cant be a difficulty until the mode is set , thats what the next if statement does, if the value of mode is null, the `Home` component is rendered otherwise the difficulty component
 3. We called the function we just created to render the suitable component
 4. Then we added a button that will set all main states to null therefore this will reset the game and will take the player back to the `Home` component, this button will show on all pages because its placed in the main `App` component
 
-### Trello
-
-Move the card 'As a player I can choose between single and multiplayer mode' from the `Doing` list to the `Done` list
-
-### Git
-
-```shell
-$ git add .
-$ git commit -m "Mode choice done"
-$ git push
-```
-
 ---
+
 ### Demo
+
 ![Games Modes](https://imgur.com/gPxqiOm.png)

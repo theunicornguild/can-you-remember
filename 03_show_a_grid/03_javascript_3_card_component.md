@@ -60,7 +60,7 @@ const Card = ({ card }) => {
       {/* 2 */}
       <img
         className="mx-auto"
-        src={card.image}
+        src={card.front}
         height="100%"
         width="100%"
         key="front"
@@ -72,7 +72,7 @@ const Card = ({ card }) => {
 export default Card; /* 3 */
 ```
 
-1. We define a `Card` function that recieve a `card` prop. We assume his will be a single card object from our `cards` array.
+1. We define a `Card` function that receive a `card` prop. We assume his will be a single card object from our `cards` array.
 2. We render the `JSX` for our card (taken from `App.js`). Note that the `src` for `img` on the card comes from the `card.image`. This means every card that we render will show the image for that card.
 3. We export `Card` so it can be used elsewhere in our code.
 
@@ -86,9 +86,6 @@ import "./App.css";
 
 //Data
 import cards from "./data";
-
-// Card Back Image
-import cardBack from "./images/CardBack.jpg";
 
 //Components
 import Card from "./Components/Card"; /* 1 */
@@ -111,8 +108,8 @@ export default App;
 ```
 
 1. We import the `Card` component
-2. Instead of hard-coded `JSX`, we use the `Card` component in our `.map`. Notice how we're passing the `card` we're iterating over into the component as a prop called `card`. This will make `cardsGrid` an array of **unique** `Card` components, each representing a different card form the `cards` array.
-3. Notice how we're also passing a `key` prop. This won't affect the way the card looks - it's there to help React manage the rendering of the `Card` components. It's important to add `key`s every time we interate to create a list of components.
+2. Instead of hard-coded `JSX`, we use the `Card` component in our `.map`. Notice how we're passing the `card` we're iterating over into the component as a prop called `card`. This will make `cardsGrid` an array of **unique** `Card` components, each representing a different card from the `cards` array.
+3. Notice how we're also passing a `key` prop. This won't affect the way the card looks - it's there to help React manage the rendering of the `Card` components. It's important to add `key`s every time we iterate to create a list of components.
 
 ---
 
